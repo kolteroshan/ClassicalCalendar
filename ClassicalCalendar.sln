@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicalCalendar", "ClassicalCalendar\ClassicalCalendar.csproj", "{CEFE6226-738C-4296-A451-DA62029533E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassicalCalendarModel", "ClassicalCalendarModel", "{69680487-6868-4531-8F7B-40703E8C5B01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassicalCalendarDTO", "ClassicalCalendarDTO", "{3C545755-A26F-47BF-9F84-CD49C69ACABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{EF378E65-BE45-4315-A6E9-25699AFF8E97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBModel", "DBModel\DBModel.csproj", "{5F125B93-674C-407E-A2F3-B10CAC474FA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schedular", "Schedular", "{6D2CA92B-9C43-4910-A478-2887B8E00E91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptiChainScheduler", "OptiChainScheduler\OptiChainScheduler.csproj", "{CD556536-1912-41EB-85B3-50B4BA0C4C95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEFE6226-738C-4296-A451-DA62029533E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEFE6226-738C-4296-A451-DA62029533E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEFE6226-738C-4296-A451-DA62029533E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEFE6226-738C-4296-A451-DA62029533E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF378E65-BE45-4315-A6E9-25699AFF8E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF378E65-BE45-4315-A6E9-25699AFF8E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF378E65-BE45-4315-A6E9-25699AFF8E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF378E65-BE45-4315-A6E9-25699AFF8E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F125B93-674C-407E-A2F3-B10CAC474FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F125B93-674C-407E-A2F3-B10CAC474FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F125B93-674C-407E-A2F3-B10CAC474FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F125B93-674C-407E-A2F3-B10CAC474FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD556536-1912-41EB-85B3-50B4BA0C4C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD556536-1912-41EB-85B3-50B4BA0C4C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD556536-1912-41EB-85B3-50B4BA0C4C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD556536-1912-41EB-85B3-50B4BA0C4C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF378E65-BE45-4315-A6E9-25699AFF8E97} = {3C545755-A26F-47BF-9F84-CD49C69ACABC}
+		{5F125B93-674C-407E-A2F3-B10CAC474FA8} = {69680487-6868-4531-8F7B-40703E8C5B01}
+		{CD556536-1912-41EB-85B3-50B4BA0C4C95} = {6D2CA92B-9C43-4910-A478-2887B8E00E91}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC3C1ABB-ABA7-41DC-A7F7-393508F05C56}
+	EndGlobalSection
+EndGlobal
