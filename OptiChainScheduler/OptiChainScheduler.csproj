@@ -17,10 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ClassicalCalendarGenericModel\ClassicalCalendarGenericModel.csproj" />
     <ProjectReference Include="..\DBModel\DBModel.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\DTO\DTO.csproj" />
+    <ProjectReference Include="..\Static\Static.csproj" />
   </ItemGroup>
 </Project>

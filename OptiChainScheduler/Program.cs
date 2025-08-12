@@ -4,6 +4,7 @@ using Hangfire.PostgreSql;
 using Microsoft.EntityFrameworkCore;
 using OptiChainScheduler;
 using OptiChainScheduler.BackGroundJobs;
+using OptiChainScheduler.NseApiService.NseIndexApiService;
 
 var builder = Host.CreateApplicationBuilder(args);
 
@@ -23,6 +24,7 @@ builder.Services.AddHangfireServer();
 
 // ✅ Register job classes
 builder.Services.AddTransient<ClassicalCalendarJobs>();
+builder.Services.AddTransient<NseIndexApiService>();
 
 // ✅ Add Worker
 builder.Services.AddHostedService<Worker>();
