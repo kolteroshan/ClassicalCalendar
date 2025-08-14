@@ -1,0 +1,12 @@
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\bin\Debug\net8.0\ClassicalCalendarJsonModel.deps.json
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\bin\Debug\net8.0\ClassicalCalendarJsonModel.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\bin\Debug\net8.0\ClassicalCalendarJsonModel.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\obj\Debug\net8.0\ClassicalCalendarJsonModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\obj\Debug\net8.0\ClassicalCalendarJsonModel.AssemblyInfoInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\obj\Debug\net8.0\ClassicalCalendarJsonModel.AssemblyInfo.cs
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\obj\Debug\net8.0\ClassicalCalendarJsonModel.csproj.CoreCompileInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\obj\Debug\net8.0\ClassicalCalendarJsonModel.sourcelink.json
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\obj\Debug\net8.0\ClassicalCalendarJsonModel.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\obj\Debug\net8.0\refint\ClassicalCalendarJsonModel.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\obj\Debug\net8.0\ClassicalCalendarJsonModel.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarJsonModel\obj\Debug\net8.0\ref\ClassicalCalendarJsonModel.dll

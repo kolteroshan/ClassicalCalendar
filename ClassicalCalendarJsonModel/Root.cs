@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Net.Http.Headers;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 
 namespace ClassicalCalendarJsonModel;
@@ -39,6 +40,18 @@ public class Root
         set
         {
             _identifier = value;
+        }
+    }
+
+    public DateOnly Date
+    {
+        get
+        {
+            return GrapthData.First().Date;
+        }
+        set
+        {
+            GrapthData.First().Date = value;
         }
     }
 }

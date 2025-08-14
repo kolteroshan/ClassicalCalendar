@@ -1,4 +1,5 @@
 ﻿using ClassicalCalendarGenericModel;
+using ClassicalCalendarJsonModel;
 using DTO;
 using System.Net;
 
@@ -6,51 +7,38 @@ namespace OptiChainScheduler.NseApiService.NseIndexApiService;
 
 public class NseIndexApiService
 {
-    private readonly HttpClient _httpClient;
     private readonly IConfiguration _configuration;
 
-    public NseIndexApiService(HttpClient httpClient, IConfiguration configuration)
+    public NseIndexApiService(IConfiguration configuration)
     {
-        _httpClient = httpClient;
         _configuration = configuration;
-        ConfigureHttpClient();
     }
-
-    private void ConfigureHttpClient()
-    {
-        var handler = new HttpClientHandler
-        {
-            AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate,
-            UseCookies = true,
-            CookieContainer = new CookieContainer()
-        };
-
-        _httpClient.DefaultRequestHeaders.Clear();
-        _httpClient.DefaultRequestHeaders.Add("User-Agent", _configuration["NseApiService:UserAgent"]);
-        _httpClient.DefaultRequestHeaders.Add("Accept", _configuration["NseApiService:Accept"]);
-        _httpClient.DefaultRequestHeaders.Add("Accept-Encoding", _configuration["NseApiService:AcceptEncoding"]);
-        _httpClient.DefaultRequestHeaders.Add("Accept-Language", _configuration["NseApiService:AcceptLanguage"]);
-        _httpClient.DefaultRequestHeaders.Add("Referer", _configuration["NseApiService:Referer"]);
-    }
-
-    public async Task InitialResponseAsync()
-        => await _httpClient.GetAsync(_configuration["NseApiService:Referer"]);
-
-    public async Task<HttpResponseMessage> IndexApiAsync(string index)
-        => await _httpClient.GetAsync($"{_configuration["OptionChainUrl:IndexUrl"]}{index}");
 
     public async Task<Responses<StrikeSnapshotDTO>> GetIndexOptionChainAsync(string index)
     {
         try
         {
-            await InitialResponseAsync();
             var response = await IndexApiAsync(index);
 
             if (response != null)
             {
-                var dto = await Deserializer.DeserializationResponse<StrikeSnapshotDTO>(response);
+                var deserializeResponse = await Deserializer.DeserializationResponse<Root>(response);
 
-                return Responses<StrikeSnapshotDTO>.Success(dto.Data.Response);
+                return Responses<StrikeSnapshotDTO>.Success(new StrikeSnapshotDTO
+                {
+                    Strike = deserializeResponse.Data!.Response.Strike,
+                    ClosePrice = deserializeResponse.Data.Response.ClosePrice,
+                    LtpDtos = deserializeResponse.Data.Response.GrapthData
+                        .Select(c => new LtpDto
+                        {
+                            Date = c.Date,
+                            Time = c.Time,
+                            Value = c.Value
+                        }).ToList(),
+                    Name = deserializeResponse.Data.Response.Name,
+                    Type = deserializeResponse.Data.Response.Type,
+                    Date = deserializeResponse.Data.Response.Date
+                });
             }
         }
         catch (Exception ex)
@@ -59,5 +47,28 @@ public class NseIndexApiService
         }
 
         return Responses<StrikeSnapshotDTO>.Error(HttpStatusCode.NotFound, index);
+    }
+
+    public async Task<HttpResponseMessage> IndexApiAsync(string symbol)
+    {
+        using (var handler = new HttpClientHandler
+        {
+            UseCookies = true,
+            AllowAutoRedirect = true
+        })
+
+        using (var client = new HttpClient(handler))
+        {
+            client.DefaultRequestHeaders.UserAgent.ParseAdd(_configuration["NseApiService:UserAgent"]);
+            client.DefaultRequestHeaders.Accept.ParseAdd(_configuration["NseApiService:Accept"]);
+
+            await client.GetAsync(_configuration["NseApiService:Referer"]);
+            await client.GetAsync(_configuration["NseApiService:OptionChain"]);
+
+            var response = await client.GetAsync($"{_configuration["OptionChainUrl:IndexUrl"]}{symbol}");
+
+            response.EnsureSuccessStatusCode();
+            return response;
+        }
     }
 }

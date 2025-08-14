@@ -15,11 +15,24 @@
       "DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Enum": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DTO.dll": {}
         },
         "runtime": {
           "bin/placeholder/DTO.dll": {}
+        }
+      },
+      "Enum/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Enum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enum.dll": {}
         }
       }
     }
@@ -34,6 +47,11 @@
       "type": "project",
       "path": "../DTO/DTO.csproj",
       "msbuildProject": "../DTO/DTO.csproj"
+    },
+    "Enum/1.0.0": {
+      "type": "project",
+      "path": "../Enum/Enum.csproj",
+      "msbuildProject": "../Enum/Enum.csproj"
     }
   },
   "projectFileDependencyGroups": {

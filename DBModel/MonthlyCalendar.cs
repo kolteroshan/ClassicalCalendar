@@ -1,4 +1,6 @@
-﻿namespace DBModel;
+﻿using Enum;
+
+namespace DBModel;
 
 public class MonthlyCalendar
 {
@@ -18,6 +20,7 @@ public class MonthlyCalendar
     public double PutSellLTP { get; set; }
     public double CallBuyLTP { get; set; }
     public double PutBuyLTP { get; set; }
+    public ClassicalCalendarStatus ClassicalCalendarStatus { get; set; }
 
     public virtual ICollection<LtpSnapshot> LtpHistory { get; set; } = new List<LtpSnapshot>();
 }

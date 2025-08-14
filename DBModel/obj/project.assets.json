@@ -281,6 +281,16 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "Enum/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Enum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enum.dll": {}
+        }
       }
     }
   },
@@ -721,10 +731,16 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Enum/1.0.0": {
+      "type": "project",
+      "path": "../Enum/Enum.csproj",
+      "msbuildProject": "../Enum/Enum.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Enum >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.8",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4"
     ]
@@ -761,7 +777,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\Enum\\Enum.csproj": {
+              "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\Enum\\Enum.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

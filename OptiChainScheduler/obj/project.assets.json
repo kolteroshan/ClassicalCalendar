@@ -961,10 +961,36 @@
           "bin/placeholder/ClassicalCalendarGenericModel.dll": {}
         }
       },
+      "ClassicalCalendarJsonModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ClassicalCalendarJsonModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassicalCalendarJsonModel.dll": {}
+        }
+      },
+      "ClassicalCalendarRepo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ClassicalCalendarGenericModel": "1.0.0",
+          "DBModel": "1.0.0",
+          "DTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ClassicalCalendarRepo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassicalCalendarRepo.dll": {}
+        }
+      },
       "DBModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Enum": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
         },
@@ -978,11 +1004,24 @@
       "DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Enum": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DTO.dll": {}
         },
         "runtime": {
           "bin/placeholder/DTO.dll": {}
+        }
+      },
+      "Enum/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Enum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enum.dll": {}
         }
       },
       "Static/1.0.0": {
@@ -2475,6 +2514,16 @@
       "path": "../ClassicalCalendarGenericModel/ClassicalCalendarGenericModel.csproj",
       "msbuildProject": "../ClassicalCalendarGenericModel/ClassicalCalendarGenericModel.csproj"
     },
+    "ClassicalCalendarJsonModel/1.0.0": {
+      "type": "project",
+      "path": "../ClassicalCalendarJsonModel/ClassicalCalendarJsonModel.csproj",
+      "msbuildProject": "../ClassicalCalendarJsonModel/ClassicalCalendarJsonModel.csproj"
+    },
+    "ClassicalCalendarRepo/1.0.0": {
+      "type": "project",
+      "path": "../ClassicalCalendarRepo/ClassicalCalendarRepo.csproj",
+      "msbuildProject": "../ClassicalCalendarRepo/ClassicalCalendarRepo.csproj"
+    },
     "DBModel/1.0.0": {
       "type": "project",
       "path": "../DBModel/DBModel.csproj",
@@ -2485,6 +2534,11 @@
       "path": "../DTO/DTO.csproj",
       "msbuildProject": "../DTO/DTO.csproj"
     },
+    "Enum/1.0.0": {
+      "type": "project",
+      "path": "../Enum/Enum.csproj",
+      "msbuildProject": "../Enum/Enum.csproj"
+    },
     "Static/1.0.0": {
       "type": "project",
       "path": "../Static/Static.csproj",
@@ -2494,6 +2548,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ClassicalCalendarGenericModel >= 1.0.0",
+      "ClassicalCalendarJsonModel >= 1.0.0",
+      "ClassicalCalendarRepo >= 1.0.0",
       "DBModel >= 1.0.0",
       "DTO >= 1.0.0",
       "Hangfire.AspNetCore >= 1.8.20",
@@ -2540,6 +2596,12 @@
           "projectReferences": {
             "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarGenericModel\\ClassicalCalendarGenericModel.csproj": {
               "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarGenericModel\\ClassicalCalendarGenericModel.csproj"
+            },
+            "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarJsonModel\\ClassicalCalendarJsonModel.csproj": {
+              "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarJsonModel\\ClassicalCalendarJsonModel.csproj"
+            },
+            "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarRepo\\ClassicalCalendarRepo.csproj": {
+              "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarRepo\\ClassicalCalendarRepo.csproj"
             },
             "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\DBModel\\DBModel.csproj": {
               "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\DBModel\\DBModel.csproj"

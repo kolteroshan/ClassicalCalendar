@@ -19,15 +19,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptiChainScheduler", "OptiC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JsonModel", "JsonModel", "{5E39F98C-F41D-415B-BDB2-51418B0F3596}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicalCalendarJsonModel", "ClassicalCalendarJsonModel\ClassicalCalendarJsonModel.csproj", "{6B99F2F5-51C1-40E2-BBC7-B641C35021CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicalCalendarJsonModel", "ClassicalCalendarJsonModel\ClassicalCalendarJsonModel.csproj", "{6B99F2F5-51C1-40E2-BBC7-B641C35021CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenericModels", "GenericModels", "{357C8475-DA62-4A66-8841-12044504B5E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicalCalendarGenericModel", "ClassicalCalendarGenericModel\ClassicalCalendarGenericModel.csproj", "{CA1DDC63-0B84-4B19-B3F8-C1733F719556}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicalCalendarGenericModel", "ClassicalCalendarGenericModel\ClassicalCalendarGenericModel.csproj", "{CA1DDC63-0B84-4B19-B3F8-C1733F719556}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassicalCalendarStaticModel", "ClassicalCalendarStaticModel", "{C71882C0-09E1-4754-829E-F46FE6CA55CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static", "Static\Static.csproj", "{94873A3B-49CB-4A3C-8773-2B93C4526F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Static", "Static\Static.csproj", "{94873A3B-49CB-4A3C-8773-2B93C4526F1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassicalCalendarEnum", "ClassicalCalendarEnum", "{BAC3E816-9842-478F-A86D-C96492D053C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enum", "Enum\Enum.csproj", "{5A2D3597-FB61-4EFF-A3F6-FDBC8A7D920B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassicalCalendarRepository", "ClassicalCalendarRepository", "{9F04A696-682D-43F4-8164-11CDA4AB3CD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicalCalendarRepo", "ClassicalCalendarRepo\ClassicalCalendarRepo.csproj", "{9971060A-FEA5-470B-9ECE-56217CB8EF91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NseApiServices", "NseApiServices", "{D6267A73-BF4A-4746-A9F6-249125E00B35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NseApi", "NseApi\NseApi.csproj", "{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +75,18 @@ Global
 		{94873A3B-49CB-4A3C-8773-2B93C4526F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94873A3B-49CB-4A3C-8773-2B93C4526F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94873A3B-49CB-4A3C-8773-2B93C4526F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A2D3597-FB61-4EFF-A3F6-FDBC8A7D920B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A2D3597-FB61-4EFF-A3F6-FDBC8A7D920B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A2D3597-FB61-4EFF-A3F6-FDBC8A7D920B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A2D3597-FB61-4EFF-A3F6-FDBC8A7D920B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9971060A-FEA5-470B-9ECE-56217CB8EF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9971060A-FEA5-470B-9ECE-56217CB8EF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9971060A-FEA5-470B-9ECE-56217CB8EF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9971060A-FEA5-470B-9ECE-56217CB8EF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +98,9 @@ Global
 		{6B99F2F5-51C1-40E2-BBC7-B641C35021CC} = {5E39F98C-F41D-415B-BDB2-51418B0F3596}
 		{CA1DDC63-0B84-4B19-B3F8-C1733F719556} = {357C8475-DA62-4A66-8841-12044504B5E4}
 		{94873A3B-49CB-4A3C-8773-2B93C4526F1C} = {C71882C0-09E1-4754-829E-F46FE6CA55CB}
+		{5A2D3597-FB61-4EFF-A3F6-FDBC8A7D920B} = {BAC3E816-9842-478F-A86D-C96492D053C9}
+		{9971060A-FEA5-470B-9ECE-56217CB8EF91} = {9F04A696-682D-43F4-8164-11CDA4AB3CD0}
+		{85CBA583-027A-42AF-8F24-4BBBAFA88AA6} = {D6267A73-BF4A-4746-A9F6-249125E00B35}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC3C1ABB-ABA7-41DC-A7F7-393508F05C56}

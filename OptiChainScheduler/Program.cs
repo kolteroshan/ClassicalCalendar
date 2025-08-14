@@ -23,10 +23,11 @@ builder.Services.AddHangfire(config =>
 builder.Services.AddHangfireServer();
 
 // ✅ Register job classes
-builder.Services.AddTransient<ClassicalCalendarJobs>();
-builder.Services.AddTransient<NseIndexApiService>();
+builder.Services.AddScoped<ClassicalCalendarJobs>();
+builder.Services.AddScoped<NseIndexApiService>();
 
 // ✅ Add Worker
+builder.Services.AddHostedService<Worker>();
 builder.Services.AddHostedService<Worker>();
 
 var host = builder.Build();

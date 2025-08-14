@@ -1,0 +1,12 @@
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\bin\Debug\net8.0\ClassicalCalendarGenericModel.deps.json
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\bin\Debug\net8.0\ClassicalCalendarGenericModel.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\bin\Debug\net8.0\ClassicalCalendarGenericModel.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\obj\Debug\net8.0\ClassicalCalendarGenericModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\obj\Debug\net8.0\ClassicalCalendarGenericModel.AssemblyInfoInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\obj\Debug\net8.0\ClassicalCalendarGenericModel.AssemblyInfo.cs
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\obj\Debug\net8.0\ClassicalCalendarGenericModel.csproj.CoreCompileInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\obj\Debug\net8.0\ClassicalCalendarGenericModel.sourcelink.json
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\obj\Debug\net8.0\ClassicalCalendarGenericModel.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\obj\Debug\net8.0\refint\ClassicalCalendarGenericModel.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\obj\Debug\net8.0\ClassicalCalendarGenericModel.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarGenericModel\obj\Debug\net8.0\ref\ClassicalCalendarGenericModel.dll

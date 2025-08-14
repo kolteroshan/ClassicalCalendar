@@ -1,6 +1,6 @@
 ﻿namespace DTO;
 
-public class LTPDTO
+public class LtpDto
 {
     public DateOnly Date { get; set; }
     public TimeOnly Time { get; set; }
