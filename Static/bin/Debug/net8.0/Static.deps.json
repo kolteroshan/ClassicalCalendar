@@ -21,8 +21,16 @@
         }
       },
       "DTO/1.0.0": {
+        "dependencies": {
+          "Enum": "1.0.0"
+        },
         "runtime": {
           "DTO.dll": {}
+        }
+      },
+      "Enum/1.0.0": {
+        "runtime": {
+          "Enum.dll": {}
         }
       }
     }
@@ -39,6 +47,11 @@
       "sha512": ""
     },
     "DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Enum/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

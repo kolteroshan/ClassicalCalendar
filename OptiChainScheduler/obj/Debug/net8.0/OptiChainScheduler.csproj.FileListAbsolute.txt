@@ -64,3 +64,7 @@ C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\Classic
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\OptiChainScheduler\obj\Debug\net8.0\OptiChainScheduler.sourcelink.json
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\OptiChainScheduler\bin\Debug\net8.0\ClassicalCalendarJsonModel.dll
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\OptiChainScheduler\bin\Debug\net8.0\ClassicalCalendarJsonModel.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\OptiChainScheduler\bin\Debug\net8.0\ClassicalCalendarRepo.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\OptiChainScheduler\bin\Debug\net8.0\ClassicalCalendarRepo.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\OptiChainScheduler\bin\Debug\net8.0\NseApi.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\OptiChainScheduler\bin\Debug\net8.0\NseApi.pdb

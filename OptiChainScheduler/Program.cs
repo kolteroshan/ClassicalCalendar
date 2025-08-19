@@ -2,9 +2,9 @@
 using Hangfire;
 using Hangfire.PostgreSql;
 using Microsoft.EntityFrameworkCore;
+using NseApi;
 using OptiChainScheduler;
 using OptiChainScheduler.BackGroundJobs;
-using OptiChainScheduler.NseApiService.NseIndexApiService;
 
 var builder = Host.CreateApplicationBuilder(args);
 

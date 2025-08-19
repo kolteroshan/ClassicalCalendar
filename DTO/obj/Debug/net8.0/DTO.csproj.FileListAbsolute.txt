@@ -10,3 +10,7 @@ C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\Classic
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\DTO\obj\Debug\net8.0\refint\DTO.dll
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\DTO\obj\Debug\net8.0\DTO.pdb
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\DTO\obj\Debug\net8.0\ref\DTO.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\DTO\bin\Debug\net8.0\Enum.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\DTO\bin\Debug\net8.0\Enum.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\DTO\obj\Debug\net8.0\DTO.csproj.AssemblyReference.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\DTO\obj\Debug\net8.0\DTO.csproj.Up2Date

@@ -1,7 +1,7 @@
 ﻿using ClassicalCalendarRepo;
 using DTO;
 using Enum;
-using OptiChainScheduler.NseApiService.NseIndexApiService;
+using NseApi;
 using System.Net;
 
 namespace OptiChainScheduler.BackGroundJobs;

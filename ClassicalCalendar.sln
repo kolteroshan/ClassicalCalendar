@@ -35,11 +35,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enum", "Enum\Enum.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassicalCalendarRepository", "ClassicalCalendarRepository", "{9F04A696-682D-43F4-8164-11CDA4AB3CD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicalCalendarRepo", "ClassicalCalendarRepo\ClassicalCalendarRepo.csproj", "{9971060A-FEA5-470B-9ECE-56217CB8EF91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicalCalendarRepo", "ClassicalCalendarRepo\ClassicalCalendarRepo.csproj", "{9971060A-FEA5-470B-9ECE-56217CB8EF91}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NseApiServices", "NseApiServices", "{D6267A73-BF4A-4746-A9F6-249125E00B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NseApi", "NseApi\NseApi.csproj", "{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NseApi", "NseApi\NseApi.csproj", "{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassicalCalendarServices", "ClassicalCalendarServices", "{8CC575EC-8E52-42B0-93FE-74C4B8C5A14A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicalCalendarServices", "ClassicalCalendarServices\ClassicalCalendarServices.csproj", "{E4B235E8-AD55-4C86-9911-3226F9154105}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,10 @@ Global
 		{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85CBA583-027A-42AF-8F24-4BBBAFA88AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B235E8-AD55-4C86-9911-3226F9154105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B235E8-AD55-4C86-9911-3226F9154105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B235E8-AD55-4C86-9911-3226F9154105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B235E8-AD55-4C86-9911-3226F9154105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +109,7 @@ Global
 		{5A2D3597-FB61-4EFF-A3F6-FDBC8A7D920B} = {BAC3E816-9842-478F-A86D-C96492D053C9}
 		{9971060A-FEA5-470B-9ECE-56217CB8EF91} = {9F04A696-682D-43F4-8164-11CDA4AB3CD0}
 		{85CBA583-027A-42AF-8F24-4BBBAFA88AA6} = {D6267A73-BF4A-4746-A9F6-249125E00B35}
+		{E4B235E8-AD55-4C86-9911-3226F9154105} = {8CC575EC-8E52-42B0-93FE-74C4B8C5A14A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC3C1ABB-ABA7-41DC-A7F7-393508F05C56}

@@ -22,6 +22,7 @@
     <ProjectReference Include="..\ClassicalCalendarRepo\ClassicalCalendarRepo.csproj" />
     <ProjectReference Include="..\DBModel\DBModel.csproj" />
     <ProjectReference Include="..\DTO\DTO.csproj" />
+    <ProjectReference Include="..\NseApi\NseApi.csproj" />
     <ProjectReference Include="..\Static\Static.csproj" />
   </ItemGroup>
 </Project>

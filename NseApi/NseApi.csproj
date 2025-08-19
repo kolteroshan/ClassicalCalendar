@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClassicalCalendarGenericModel\ClassicalCalendarGenericModel.csproj" />
+    <ProjectReference Include="..\ClassicalCalendarJsonModel\ClassicalCalendarJsonModel.csproj" />
+    <ProjectReference Include="..\DTO\DTO.csproj" />
+    <ProjectReference Include="..\Static\Static.csproj" />
+  </ItemGroup>
+
 </Project>

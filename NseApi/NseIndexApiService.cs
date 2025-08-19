@@ -1,19 +1,13 @@
-﻿using ClassicalCalendarGenericModel;
-using ClassicalCalendarJsonModel;
-using DTO;
+﻿using DTO;
+using Static;
 using System.Net;
+using ClassicalCalendarJsonModel;
+using ClassicalCalendarGenericModel;
 
-namespace OptiChainScheduler.NseApiService.NseIndexApiService;
+namespace NseApi;
 
 public class NseIndexApiService
 {
-    private readonly IConfiguration _configuration;
-
-    public NseIndexApiService(IConfiguration configuration)
-    {
-        _configuration = configuration;
-    }
-
     public async Task<Responses<StrikeSnapshotDTO>> GetIndexOptionChainAsync(string index)
     {
         try
@@ -59,13 +53,13 @@ public class NseIndexApiService
 
         using (var client = new HttpClient(handler))
         {
-            client.DefaultRequestHeaders.UserAgent.ParseAdd(_configuration["NseApiService:UserAgent"]);
-            client.DefaultRequestHeaders.Accept.ParseAdd(_configuration["NseApiService:Accept"]);
+            client.DefaultRequestHeaders.UserAgent.ParseAdd(NseStaticData.UserAgent);
+            client.DefaultRequestHeaders.Accept.ParseAdd(NseStaticData.Accept);
 
-            await client.GetAsync(_configuration["NseApiService:Referer"]);
-            await client.GetAsync(_configuration["NseApiService:OptionChain"]);
+            await client.GetAsync(NseStaticData.Refere);
+            await client.GetAsync(NseStaticData.OptionChain);
 
-            var response = await client.GetAsync($"{_configuration["OptionChainUrl:IndexUrl"]}{symbol}");
+            var response = await client.GetAsync($"{NseStaticData.IndexUrl}{symbol}");
 
             response.EnsureSuccessStatusCode();
             return response;

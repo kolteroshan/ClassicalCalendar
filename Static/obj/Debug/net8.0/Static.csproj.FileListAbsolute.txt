@@ -16,3 +16,5 @@ C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\Classic
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\obj\Debug\net8.0\refint\Static.dll
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\obj\Debug\net8.0\Static.pdb
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\obj\Debug\net8.0\ref\Static.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\Enum.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\Enum.pdb

@@ -1,0 +1,6 @@
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\obj\Debug\net8.0\ClassicalCalendarServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\obj\Debug\net8.0\ClassicalCalendarServices.AssemblyInfoInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\obj\Debug\net8.0\ClassicalCalendarServices.AssemblyInfo.cs
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\obj\Debug\net8.0\ClassicalCalendarServices.csproj.CoreCompileInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\obj\Debug\net8.0\ClassicalCalendarServices.sourcelink.json
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\obj\Debug\net8.0\ClassicalCalendarServices.csproj.AssemblyReference.cache
