@@ -7,14 +7,14 @@ namespace OptiChainScheduler.BackGroundJobs;
 
 public class ClassicalCalendarJobs
 {
-    private readonly NseIndexApiService _nseIndexApiService;
+    private readonly NseIndexStrikeLtpHistoryApiService _nseIndexApiService;
     private readonly ActiveClassicalCalendarRepo _activeClassicalCalendarRepo;
     private readonly RecentDateLtpSnapshotsDataRepo _recentDateLtpSnapshotsDataRepo;
     private readonly ILogger<ClassicalCalendarJobs> _logger;
     private readonly StoreLtpSnapshotsDataRepo _storeLtpSnapshotsDataRepo;
 
     public ClassicalCalendarJobs(
-        NseIndexApiService nseIndexApiService,
+        NseIndexStrikeLtpHistoryApiService nseIndexApiService,
         ActiveClassicalCalendarRepo activeClassicalCalendarRepo,
         RecentDateLtpSnapshotsDataRepo recentDateLtpSnapshotsDataRepo,
         StoreLtpSnapshotsDataRepo storeLtpSnapshotsDataRepo,
@@ -37,10 +37,10 @@ public class ClassicalCalendarJobs
             return;
         }
 
-        var ceSellData = await _nseIndexApiService.GetIndexOptionChainAsync("30-09-2025CE24900.00");
-        var peSellData = await _nseIndexApiService.GetIndexOptionChainAsync("30-09-2025PE24900.00");
-        var ceBuyData = await _nseIndexApiService.GetIndexOptionChainAsync("28-10-2025CE24900.00");
-        var peBuyData = await _nseIndexApiService.GetIndexOptionChainAsync("28-10-2025PE24900.00");
+        var ceSellData = await _nseIndexApiService.GetIndexOptionChainStrikeLtpHistoryAsync("30-09-2025CE24900.00");
+        var peSellData = await _nseIndexApiService.GetIndexOptionChainStrikeLtpHistoryAsync("30-09-2025PE24900.00");
+        var ceBuyData = await _nseIndexApiService.GetIndexOptionChainStrikeLtpHistoryAsync("28-10-2025CE24900.00");
+        var peBuyData = await _nseIndexApiService.GetIndexOptionChainStrikeLtpHistoryAsync("28-10-2025PE24900.00");
 
         var allTimeFrame = GetAllTimeFrames(ceSellData.Data, peSellData.Data, ceBuyData.Data, peBuyData.Data);
 

@@ -1,16 +1,16 @@
 ﻿using Hangfire;
 using OptiChainScheduler.BackGroundJobs;
 
-namespace OptiChainScheduler;
+namespace OptiChainScheduler.BackgroundExecutorService;
 
-public class Worker : BackgroundService
+public class DataFetchWorker : BackgroundService
 {
-    private readonly ILogger<Worker> _logger;
+    private readonly ILogger<DataFetchWorker> _logger;
     private readonly IRecurringJobManager _recurringJobManager;
     private readonly IServiceScopeFactory _scopeFactory;
 
-    public Worker(
-        ILogger<Worker> logger,
+    public DataFetchWorker(
+        ILogger<DataFetchWorker> logger,
         IRecurringJobManager recurringJobManager,
         IServiceScopeFactory serviceScopeFactory)
     {
@@ -28,7 +28,7 @@ public class Worker : BackgroundService
             "weekday-3-35pm",
             () => jobs.FetchCalendarData(),
             "* * * * *"
-            //"35 15 * * 1-5"
+        //"35 15 * * 1-5"
         );
 
         // Job Id = "weekday-3-35pm" - Unique

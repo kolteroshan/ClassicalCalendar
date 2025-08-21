@@ -6,9 +6,9 @@ using ClassicalCalendarGenericModel;
 
 namespace NseApi;
 
-public class NseIndexApiService
+public class NseIndexStrikeLtpHistoryApiService
 {
-    public async Task<Responses<StrikeSnapshotDTO>> GetIndexOptionChainAsync(string index)
+    public async Task<Responses<StrikeSnapshotDTO>> GetIndexOptionChainStrikeLtpHistoryAsync(string index)
     {
         try
         {
@@ -45,24 +45,11 @@ public class NseIndexApiService
 
     public async Task<HttpResponseMessage> IndexApiAsync(string symbol)
     {
-        using (var handler = new HttpClientHandler
-        {
-            UseCookies = true,
-            AllowAutoRedirect = true
-        })
+        var client = await NseApiService.IndexApiAsync();
 
-        using (var client = new HttpClient(handler))
-        {
-            client.DefaultRequestHeaders.UserAgent.ParseAdd(NseStaticData.UserAgent);
-            client.DefaultRequestHeaders.Accept.ParseAdd(NseStaticData.Accept);
+        var response = await client.GetAsync($"{NseStaticData.LtpHistoryUrl}{symbol}");
 
-            await client.GetAsync(NseStaticData.Refere);
-            await client.GetAsync(NseStaticData.OptionChain);
-
-            var response = await client.GetAsync($"{NseStaticData.IndexUrl}{symbol}");
-
-            response.EnsureSuccessStatusCode();
-            return response;
-        }
+        response.EnsureSuccessStatusCode();
+        return response;
     }
 }

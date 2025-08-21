@@ -27,7 +27,7 @@ public class ExecuteNewOrderWorker : BackgroundService
         _recurringJobManager.AddOrUpdate(
             "weekday-11-11am",
             () => jobs.ExecuteNewOrder(),
-           "11 11 * * 1-5"
+           "* * * * *" //"11 11 * * 1-5"
         );
     }
 }

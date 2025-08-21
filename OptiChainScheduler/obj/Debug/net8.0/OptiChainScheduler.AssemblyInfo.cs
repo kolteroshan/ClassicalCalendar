@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OptiChainScheduler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45146bd70861f20aaafc4622bf7d21c8c31b96ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c51ed46d21c6d45101f5514074208ae8715e835")]
 [assembly: System.Reflection.AssemblyProductAttribute("OptiChainScheduler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OptiChainScheduler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
