@@ -1,8 +1,7 @@
-﻿using DTO;
-using Static;
+﻿using Static;
 using System.Net;
-using ClassicalCalendarJsonModel;
 using ClassicalCalendarGenericModel;
+using NseApiJsonModel;
 
 namespace NseApi;
 
@@ -22,7 +21,7 @@ public class NseIndexStrikeLtpHistoryApiService
                 {
                     Strike = deserializeResponse.Data!.Response.Strike,
                     ClosePrice = deserializeResponse.Data.Response.ClosePrice,
-                    LtpDtos = deserializeResponse.Data.Response.GrapthData
+                    LtpDtos = deserializeResponse.Data.Response.GraphPoint
                         .Select(c => new LtpDto
                         {
                             Date = c.Date,

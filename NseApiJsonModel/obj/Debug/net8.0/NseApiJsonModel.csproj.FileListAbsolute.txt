@@ -1,0 +1,5 @@
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiJsonModel\obj\Debug\net8.0\NseApiJsonModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiJsonModel\obj\Debug\net8.0\NseApiJsonModel.AssemblyInfoInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiJsonModel\obj\Debug\net8.0\NseApiJsonModel.AssemblyInfo.cs
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiJsonModel\obj\Debug\net8.0\NseApiJsonModel.csproj.CoreCompileInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiJsonModel\obj\Debug\net8.0\NseApiJsonModel.sourcelink.json

@@ -3,8 +3,10 @@ C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\Classic
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\Static.pdb
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\ClassicalCalendarGenericModel.dll
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\DTO.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\Enum.dll
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\ClassicalCalendarGenericModel.pdb
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\DTO.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\Enum.pdb
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\obj\Debug\net8.0\Static.csproj.AssemblyReference.cache
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\obj\Debug\net8.0\Static.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\obj\Debug\net8.0\Static.AssemblyInfoInputs.cache
@@ -16,5 +18,3 @@ C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\Classic
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\obj\Debug\net8.0\refint\Static.dll
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\obj\Debug\net8.0\Static.pdb
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\obj\Debug\net8.0\ref\Static.dll
-C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\Enum.dll
-C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\Static\bin\Debug\net8.0\Enum.pdb

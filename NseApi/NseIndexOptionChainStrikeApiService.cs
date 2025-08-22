@@ -1,9 +1,6 @@
-﻿using ClassicalCalendarGenericModel;
-using ClassicalCalendarJsonModel;
-using DTO;
+﻿using NseApiDTO;
+using NseApiJsonModel;
 using Static;
-using System;
-using System.Net;
 
 namespace NseApi;
 
@@ -94,7 +91,7 @@ public class NseIndexOptionChainStrikeApiService
                     expiryDateObjectList.Add(expiryDateObject);
                 }
 
-                var optionChainDto = new OptionChainDto
+                var optionChainDto = new OptionChainDTO
                 {
                     DateOfOptionChain = records.Date,
                     Expires = expiryDateObjectList

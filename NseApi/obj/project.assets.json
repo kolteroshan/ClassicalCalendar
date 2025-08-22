@@ -12,16 +12,6 @@
           "bin/placeholder/ClassicalCalendarGenericModel.dll": {}
         }
       },
-      "ClassicalCalendarJsonModel/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/ClassicalCalendarJsonModel.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClassicalCalendarJsonModel.dll": {}
-        }
-      },
       "DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -43,6 +33,26 @@
         },
         "runtime": {
           "bin/placeholder/Enum.dll": {}
+        }
+      },
+      "NseApiDTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NseApiDTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NseApiDTO.dll": {}
+        }
+      },
+      "NseApiJsonModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NseApiJsonModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NseApiJsonModel.dll": {}
         }
       },
       "Static/1.0.0": {
@@ -67,11 +77,6 @@
       "path": "../ClassicalCalendarGenericModel/ClassicalCalendarGenericModel.csproj",
       "msbuildProject": "../ClassicalCalendarGenericModel/ClassicalCalendarGenericModel.csproj"
     },
-    "ClassicalCalendarJsonModel/1.0.0": {
-      "type": "project",
-      "path": "../ClassicalCalendarJsonModel/ClassicalCalendarJsonModel.csproj",
-      "msbuildProject": "../ClassicalCalendarJsonModel/ClassicalCalendarJsonModel.csproj"
-    },
     "DTO/1.0.0": {
       "type": "project",
       "path": "../DTO/DTO.csproj",
@@ -82,6 +87,16 @@
       "path": "../Enum/Enum.csproj",
       "msbuildProject": "../Enum/Enum.csproj"
     },
+    "NseApiDTO/1.0.0": {
+      "type": "project",
+      "path": "../NseApiDTO/NseApiDTO.csproj",
+      "msbuildProject": "../NseApiDTO/NseApiDTO.csproj"
+    },
+    "NseApiJsonModel/1.0.0": {
+      "type": "project",
+      "path": "../NseApiJsonModel/NseApiJsonModel.csproj",
+      "msbuildProject": "../NseApiJsonModel/NseApiJsonModel.csproj"
+    },
     "Static/1.0.0": {
       "type": "project",
       "path": "../Static/Static.csproj",
@@ -91,8 +106,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ClassicalCalendarGenericModel >= 1.0.0",
-      "ClassicalCalendarJsonModel >= 1.0.0",
-      "DTO >= 1.0.0",
+      "NseApiDTO >= 1.0.0",
+      "NseApiJsonModel >= 1.0.0",
       "Static >= 1.0.0"
     ]
   },
@@ -132,11 +147,11 @@
             "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarGenericModel\\ClassicalCalendarGenericModel.csproj": {
               "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarGenericModel\\ClassicalCalendarGenericModel.csproj"
             },
-            "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarJsonModel\\ClassicalCalendarJsonModel.csproj": {
-              "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\ClassicalCalendarJsonModel\\ClassicalCalendarJsonModel.csproj"
+            "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\NseApiDTO\\NseApiDTO.csproj": {
+              "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\NseApiDTO\\NseApiDTO.csproj"
             },
-            "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\DTO\\DTO.csproj"
+            "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\NseApiJsonModel\\NseApiJsonModel.csproj": {
+              "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\NseApiJsonModel\\NseApiJsonModel.csproj"
             },
             "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\Static\\Static.csproj": {
               "projectPath": "C:\\Users\\htadmin\\OneDrive\\Desktop\\OptionTradingBackEnd\\ClassicalCalendar\\ClassicalCalendar\\Static\\Static.csproj"

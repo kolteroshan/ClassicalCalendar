@@ -1029,8 +1029,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "ClassicalCalendarGenericModel": "1.0.0",
-          "ClassicalCalendarJsonModel": "1.0.0",
-          "DTO": "1.0.0",
+          "NseApiDTO": "1.0.0",
+          "NseApiJsonModel": "1.0.0",
           "Static": "1.0.0"
         },
         "compile": {
@@ -1038,6 +1038,26 @@
         },
         "runtime": {
           "bin/placeholder/NseApi.dll": {}
+        }
+      },
+      "NseApiDTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NseApiDTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NseApiDTO.dll": {}
+        }
+      },
+      "NseApiJsonModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NseApiJsonModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NseApiJsonModel.dll": {}
         }
       },
       "Static/1.0.0": {
@@ -2559,6 +2579,16 @@
       "type": "project",
       "path": "../NseApi/NseApi.csproj",
       "msbuildProject": "../NseApi/NseApi.csproj"
+    },
+    "NseApiDTO/1.0.0": {
+      "type": "project",
+      "path": "../NseApiDTO/NseApiDTO.csproj",
+      "msbuildProject": "../NseApiDTO/NseApiDTO.csproj"
+    },
+    "NseApiJsonModel/1.0.0": {
+      "type": "project",
+      "path": "../NseApiJsonModel/NseApiJsonModel.csproj",
+      "msbuildProject": "../NseApiJsonModel/NseApiJsonModel.csproj"
     },
     "Static/1.0.0": {
       "type": "project",

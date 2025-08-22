@@ -8,8 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassicalCalendarGenericModel\ClassicalCalendarGenericModel.csproj" />
-    <ProjectReference Include="..\ClassicalCalendarJsonModel\ClassicalCalendarJsonModel.csproj" />
-    <ProjectReference Include="..\DTO\DTO.csproj" />
+    <ProjectReference Include="..\NseApiDTO\NseApiDTO.csproj" />
+    <ProjectReference Include="..\NseApiJsonModel\NseApiJsonModel.csproj" />
     <ProjectReference Include="..\Static\Static.csproj" />
   </ItemGroup>
 

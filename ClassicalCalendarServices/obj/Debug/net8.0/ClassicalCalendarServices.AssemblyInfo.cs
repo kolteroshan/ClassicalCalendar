@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClassicalCalendarServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45146bd70861f20aaafc4622bf7d21c8c31b96ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+482388267cf6a623fc79521ec3a7aba98af5055c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClassicalCalendarServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClassicalCalendarServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
