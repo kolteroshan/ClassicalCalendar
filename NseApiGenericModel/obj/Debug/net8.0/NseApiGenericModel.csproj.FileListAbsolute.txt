@@ -1,0 +1,12 @@
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\bin\Debug\net8.0\NseApiGenericModel.deps.json
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\bin\Debug\net8.0\NseApiGenericModel.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\bin\Debug\net8.0\NseApiGenericModel.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\obj\Debug\net8.0\NseApiGenericModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\obj\Debug\net8.0\NseApiGenericModel.AssemblyInfoInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\obj\Debug\net8.0\NseApiGenericModel.AssemblyInfo.cs
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\obj\Debug\net8.0\NseApiGenericModel.csproj.CoreCompileInputs.cache
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\obj\Debug\net8.0\NseApiGenericModel.sourcelink.json
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\obj\Debug\net8.0\NseApiGenericModel.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\obj\Debug\net8.0\refint\NseApiGenericModel.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\obj\Debug\net8.0\NseApiGenericModel.pdb
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\NseApiGenericModel\obj\Debug\net8.0\ref\NseApiGenericModel.dll

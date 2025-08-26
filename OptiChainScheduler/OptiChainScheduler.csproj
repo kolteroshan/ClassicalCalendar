@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassicalCalendarGenericModel\ClassicalCalendarGenericModel.csproj" />
-    <ProjectReference Include="..\ClassicalCalendarJsonModel\ClassicalCalendarJsonModel.csproj" />
     <ProjectReference Include="..\ClassicalCalendarRepo\ClassicalCalendarRepo.csproj" />
     <ProjectReference Include="..\DBModel\DBModel.csproj" />
     <ProjectReference Include="..\DTO\DTO.csproj" />

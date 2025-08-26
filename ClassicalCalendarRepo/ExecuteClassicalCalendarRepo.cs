@@ -23,23 +23,21 @@ public class ExecuteClassicalCalendarRepo
 
     public async Task<Responses<Empty>> ExecuteNewClassicalCalendar(NewMonthlyCalendarDTO newMonthlyCalendarDTO)
     {
-        var newOrder = new MonthlyCalendar
-        {
-            Id = Guid.NewGuid(),
-            BuyOrderExpiryDate = new DateOnly(),
-            SellOrderExpiryDate = new DateOnly(),
-            CallBuyLTP = 100,
-            CallSellLTP = 100,
-            PutSellLTP = 100,
-            PutBuyLTP = 100,
-            Strike = 25000,
-            ClassicalCalendarStatus = ClassicalCalendarStatus.Active,
-            ExecutionDate = new DateOnly(),
-            ExecutionTime = new TimeOnly()
-        };
-
         _ = await _classicalCalendarContext.MonthlyCalendars
-            .AddAsync(newOrder);
+            .AddAsync(new MonthlyCalendar
+            {
+                Id = newMonthlyCalendarDTO.Id,
+                BuyOrderExpiryDate = newMonthlyCalendarDTO.BuyOrderExpiryDate,
+                SellOrderExpiryDate = newMonthlyCalendarDTO.SellOrderExpiryDate,
+                CallBuyLTP = newMonthlyCalendarDTO.CallBuyLTP,
+                CallSellLTP = newMonthlyCalendarDTO.CallSellLTP,
+                PutSellLTP = newMonthlyCalendarDTO.PutSellLTP,
+                PutBuyLTP = newMonthlyCalendarDTO.PutBuyLTP,
+                Strike = newMonthlyCalendarDTO.Strike,
+                ClassicalCalendarStatus = newMonthlyCalendarDTO.ClassicalCalendarStatus,
+                ExecutionDate = newMonthlyCalendarDTO.ExecutionDate,
+                ExecutionTime = newMonthlyCalendarDTO.ExecutionTime
+            });
 
         _ = await _classicalCalendarContext.SaveChangesAsync();
 

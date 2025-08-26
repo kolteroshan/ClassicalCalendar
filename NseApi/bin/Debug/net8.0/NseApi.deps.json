@@ -1,0 +1,122 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "NseApi/1.0.0": {
+        "dependencies": {
+          "ClassicalCalendarGenericModel": "1.0.0",
+          "NseApiDTO": "1.0.0",
+          "NseApiGenericModel": "1.0.0",
+          "NseApiJsonModel": "1.0.0",
+          "NseApiStaticModel": "1.0.0",
+          "Static": "1.0.0"
+        },
+        "runtime": {
+          "NseApi.dll": {}
+        }
+      },
+      "ClassicalCalendarGenericModel/1.0.0": {
+        "runtime": {
+          "ClassicalCalendarGenericModel.dll": {}
+        }
+      },
+      "DTO/1.0.0": {
+        "dependencies": {
+          "Enum": "1.0.0"
+        },
+        "runtime": {
+          "DTO.dll": {}
+        }
+      },
+      "Enum/1.0.0": {
+        "runtime": {
+          "Enum.dll": {}
+        }
+      },
+      "NseApiDTO/1.0.0": {
+        "runtime": {
+          "NseApiDTO.dll": {}
+        }
+      },
+      "NseApiGenericModel/1.0.0": {
+        "runtime": {
+          "NseApiGenericModel.dll": {}
+        }
+      },
+      "NseApiJsonModel/1.0.0": {
+        "runtime": {
+          "NseApiJsonModel.dll": {}
+        }
+      },
+      "NseApiStaticModel/1.0.0": {
+        "dependencies": {
+          "DTO": "1.0.0",
+          "NseApiGenericModel": "1.0.0"
+        },
+        "runtime": {
+          "NseApiStaticModel.dll": {}
+        }
+      },
+      "Static/1.0.0": {
+        "dependencies": {
+          "ClassicalCalendarGenericModel": "1.0.0",
+          "DTO": "1.0.0"
+        },
+        "runtime": {
+          "Static.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NseApi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassicalCalendarGenericModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Enum/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NseApiDTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NseApiGenericModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NseApiJsonModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NseApiStaticModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Static/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

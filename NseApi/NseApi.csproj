@@ -9,7 +9,9 @@
   <ItemGroup>
     <ProjectReference Include="..\ClassicalCalendarGenericModel\ClassicalCalendarGenericModel.csproj" />
     <ProjectReference Include="..\NseApiDTO\NseApiDTO.csproj" />
+    <ProjectReference Include="..\NseApiGenericModel\NseApiGenericModel.csproj" />
     <ProjectReference Include="..\NseApiJsonModel\NseApiJsonModel.csproj" />
+    <ProjectReference Include="..\NseApiStaticModel\NseApiStaticModel.csproj" />
     <ProjectReference Include="..\Static\Static.csproj" />
   </ItemGroup>
 

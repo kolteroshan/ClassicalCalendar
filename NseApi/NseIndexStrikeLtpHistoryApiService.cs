@@ -1,13 +1,14 @@
-﻿using Static;
-using System.Net;
-using ClassicalCalendarGenericModel;
+﻿using System.Net;
 using NseApiJsonModel;
+using NseApiDTO;
+using NseApiStaticModel;
+using NseApiGenericModel;
 
 namespace NseApi;
 
 public class NseIndexStrikeLtpHistoryApiService
 {
-    public async Task<Responses<StrikeSnapshotDTO>> GetIndexOptionChainStrikeLtpHistoryAsync(string index)
+    public async Task<NseApiResponses<NseStrikeSnapshotDTO>> GetIndexOptionChainStrikeLtpHistoryAsync(string index)
     {
         try
         {
@@ -17,12 +18,12 @@ public class NseIndexStrikeLtpHistoryApiService
             {
                 var deserializeResponse = await Deserializer.DeserializationResponse<Root>(response);
 
-                return Responses<StrikeSnapshotDTO>.Success(new StrikeSnapshotDTO
+                return NseApiResponses<NseStrikeSnapshotDTO>.Success(new NseStrikeSnapshotDTO
                 {
                     Strike = deserializeResponse.Data!.Response.Strike,
                     ClosePrice = deserializeResponse.Data.Response.ClosePrice,
                     LtpDtos = deserializeResponse.Data.Response.GraphPoint
-                        .Select(c => new LtpDto
+                        .Select(c => new NseLtpDto
                         {
                             Date = c.Date,
                             Time = c.Time,
@@ -39,14 +40,14 @@ public class NseIndexStrikeLtpHistoryApiService
             var message = ex.Message;
         }
 
-        return Responses<StrikeSnapshotDTO>.Error(HttpStatusCode.NotFound, index);
+        return NseApiResponses<NseStrikeSnapshotDTO>.Error(HttpStatusCode.NotFound, index);
     }
 
     public async Task<HttpResponseMessage> IndexApiAsync(string symbol)
     {
         var client = await NseApiService.IndexApiAsync();
 
-        var response = await client.GetAsync($"{NseStaticData.LtpHistoryUrl}{symbol}");
+        var response = await client.GetAsync($"{NseApiStaticData.LtpHistoryUrl}{symbol}");
 
         response.EnsureSuccessStatusCode();
         return response;

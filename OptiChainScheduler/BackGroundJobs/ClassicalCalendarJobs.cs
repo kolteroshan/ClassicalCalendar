@@ -1,6 +1,7 @@
 ﻿using ClassicalCalendarRepo;
 using DTO;
 using NseApi;
+using NseApiDTO;
 using System.Net;
 
 namespace OptiChainScheduler.BackGroundJobs;
@@ -71,10 +72,10 @@ public class ClassicalCalendarJobs
     }
 
     private List<TimeOnly> GetAllTimeFrames(
-        StrikeSnapshotDTO? ceSellData,
-        StrikeSnapshotDTO? peSellData,
-        StrikeSnapshotDTO? ceBuyData,
-        StrikeSnapshotDTO? peBuyData) =>
+        NseStrikeSnapshotDTO? ceSellData,
+        NseStrikeSnapshotDTO? peSellData,
+        NseStrikeSnapshotDTO? ceBuyData,
+        NseStrikeSnapshotDTO? peBuyData) =>
             (ceSellData?.LtpDtos?.Select(c => c.Time) ?? Enumerable.Empty<TimeOnly>())
             .Concat(peSellData?.LtpDtos?.Select(c => c.Time) ?? Enumerable.Empty<TimeOnly>())
             .Concat(ceBuyData?.LtpDtos?.Select(c => c.Time) ?? Enumerable.Empty<TimeOnly>())
@@ -84,10 +85,10 @@ public class ClassicalCalendarJobs
             .ToList();
 
     private async Task<List<LtpSnapshotDto>> RemainingDaysOfExecution(
-        StrikeSnapshotDTO? ceSellData,
-        StrikeSnapshotDTO? peSellData,
-        StrikeSnapshotDTO? ceBuyData,
-        StrikeSnapshotDTO? peBuyData,
+        NseStrikeSnapshotDTO? ceSellData,
+        NseStrikeSnapshotDTO? peSellData,
+        NseStrikeSnapshotDTO? ceBuyData,
+        NseStrikeSnapshotDTO? peBuyData,
         ActiveClassicalCalendarDTO activeClassicalCalendarDTO,
         List<TimeOnly> timeOnlies)
     {
@@ -187,10 +188,10 @@ public class ClassicalCalendarJobs
     }
 
     private List<LtpSnapshotDto> FirstDayOfExecution(
-        StrikeSnapshotDTO? ceSellData,
-        StrikeSnapshotDTO? peSellData,
-        StrikeSnapshotDTO? ceBuyData,
-        StrikeSnapshotDTO? peBuyData,
+        NseStrikeSnapshotDTO? ceSellData,
+        NseStrikeSnapshotDTO? peSellData,
+        NseStrikeSnapshotDTO? ceBuyData,
+        NseStrikeSnapshotDTO? peBuyData,
         ActiveClassicalCalendarDTO activeClassicalCalendarDTO,
         List<TimeOnly> timeOnlies)
     {

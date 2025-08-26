@@ -46,11 +46,11 @@ public class Root
     {
         get
         {
-            return GrapthData.First().Date;
+            return GraphPoint.First().Date;
         }
         set
         {
-            GrapthData.First().Date = value;
+            GraphPoint.First().Date = value;
         }
     }
 }

@@ -2,6 +2,7 @@
 using DTO;
 using Enum;
 using NseApi;
+using NseApiStaticModel;
 using System.Net;
 
 namespace OptiChainScheduler.BackGroundJobs;
@@ -27,30 +28,55 @@ public class ClassicalCalendarNewOrderJob
 
     public async Task ExecuteNewOrder()
     {
-        await _nseIndexOptionChainStrikeApiService.GetIndexOptionChainAsync();
-        //var activeStrike = await _activeClassicalCalendarRepo.GetActiveClassicalCalendrStrike();
+        var activeStrike = await _activeClassicalCalendarRepo.GetActiveClassicalCalendrStrike();
 
-        //if (activeStrike is { StatusCode: HttpStatusCode.OK })
-        //{
-        //    return;
-        //}
+        if (activeStrike is { StatusCode: HttpStatusCode.OK })
+        {
+            return;
+        }
 
-        //var newOrder = await _executeClassicalCalendarRepo.ExecuteNewClassicalCalendar(
-        //    new NewMonthlyCalendarDTO
-        //    {
-        //        Id = Guid.NewGuid(),
-        //        BuyOrderExpiryDate = new DateOnly(),
-        //        SellOrderExpiryDate = new DateOnly(),
-        //        CallBuyLTP = 100,
-        //        CallSellLTP = 100,
-        //        PutSellLTP = 100,
-        //        PutBuyLTP = 100,
-        //        Strike = 25000,
-        //        ClassicalCalendarStatus = ClassicalCalendarStatus.Active,
-        //        ExecutionDate = new DateOnly(),
-        //        ExecutionTime = new TimeOnly()
-        //    });
+        var newOrder = await _executeClassicalCalendarRepo
+            .ExecuteNewClassicalCalendar(await GetNewClassicalCalendarOrder());
+    }
 
-        //var data = await _nseIndexApiService.GetIndexOptionChainAsync("14-08-2025CE23050.00");
+    public async Task<NewMonthlyCalendarDTO> GetNewClassicalCalendarOrder()
+    {
+        var optionChainData = await _nseIndexOptionChainStrikeApiService
+            .GetIndexOptionChainAsync(NseIndexTypes.Nifty);
+
+        var month = optionChainData.Data.DateOfOptionChain.Month;
+
+        var now = DateTime.Now;
+
+        var nextMonthOption = optionChainData.Data.Expires
+            .Where(c => c.ExpiryDate.Month == now.AddMonths(1).Month)
+            .OrderByDescending(c => c.ExpiryDate)
+            .FirstOrDefault();
+
+        var nextMonthAfterNextOption = optionChainData.Data.Expires
+            .Where(c => c.ExpiryDate.Month == now.AddMonths(2).Month)
+            .OrderByDescending(c => c.ExpiryDate)
+            .FirstOrDefault();
+
+        var strike = Math.Floor(nextMonthOption.LiveStrike / 100) * 100;
+
+        var sellStrike = nextMonthOption.Strikes.Where(s => s.Strike == strike).Single();
+
+        var buyStrike = nextMonthAfterNextOption.Strikes.Where(s => s.Strike == strike).Single();
+
+        return new NewMonthlyCalendarDTO
+        {
+            Id = Guid.NewGuid(),
+            BuyOrderExpiryDate = nextMonthAfterNextOption.ExpiryDate,
+            SellOrderExpiryDate = nextMonthOption.ExpiryDate,
+            CallBuyLTP = buyStrike.CallDTO.LastPrice,
+            CallSellLTP = sellStrike.CallDTO.LastPrice,
+            PutSellLTP = sellStrike.PutData.LastPrice,
+            PutBuyLTP = buyStrike.PutData.LastPrice,
+            Strike = strike,
+            ClassicalCalendarStatus = ClassicalCalendarStatus.Active,
+            ExecutionDate = DateOnly.FromDateTime(now),
+            ExecutionTime = TimeOnly.FromDateTime(now)
+        };
     }
 }

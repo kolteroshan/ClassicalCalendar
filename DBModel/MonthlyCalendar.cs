@@ -11,7 +11,7 @@ public class MonthlyCalendar
     public Guid Id { get; set; }
 
     [Required]
-    public int Strike {  get; set; }
+    public double Strike {  get; set; }
 
     [Required]
     public DateOnly ExecutionDate { get; set; }

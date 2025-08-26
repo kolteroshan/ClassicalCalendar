@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClassicalCalendarJsonModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+482388267cf6a623fc79521ec3a7aba98af5055c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cae5b46e8274837bcc3f0d9f7e7dcbb0aa570c50")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClassicalCalendarJsonModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClassicalCalendarJsonModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
