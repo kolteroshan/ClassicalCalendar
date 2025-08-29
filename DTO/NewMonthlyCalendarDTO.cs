@@ -6,7 +6,7 @@ public class NewMonthlyCalendarDTO
 {
     public Guid Id { get; set; } = Guid.NewGuid();
 
-    public double Strike { get; set; }
+    public int Strike { get; set; }
 
     public DateOnly ExecutionDate { get; set; } = new DateOnly();
 

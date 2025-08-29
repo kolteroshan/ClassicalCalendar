@@ -1,6 +1,6 @@
 ﻿namespace DTO;
 
-public class LtpSnapshotDto
+public class LtpSnapshotDTO
 {
     public Guid Id { get; set; }
     public Guid MonthlyCalendarId { get; set; }

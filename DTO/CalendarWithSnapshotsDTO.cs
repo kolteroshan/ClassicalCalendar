@@ -1,8 +1,6 @@
-﻿using Enum;
+﻿namespace DTO;
 
-namespace DTO;
-
-public class ActiveCalendarWithSnapshotsDTO
+public class CalendarWithSnapshotsDTO
 {
     public Guid Id { get; set; }
 
@@ -20,6 +18,5 @@ public class ActiveCalendarWithSnapshotsDTO
     public decimal PutSellLTP { get; set; }
     public decimal CallBuyLTP { get; set; }
     public decimal PutBuyLTP { get; set; }
-
-    public virtual ICollection<LtpSnapshotDto> LtpHistory { get; set; } = new List<LtpSnapshotDto>();
+    public virtual ICollection<LtpSnapshotDTO> LtpHistory { get; set; } = new List<LtpSnapshotDTO>();
 }

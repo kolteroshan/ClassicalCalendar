@@ -32,6 +32,7 @@ builder.Services.AddScoped<NseIndexStrikeLtpHistoryApiService>();
 builder.Services.AddScoped<NseIndexOptionChainStrikeApiService>();
 builder.Services.AddScoped<StoreLtpSnapshotsDataRepo>();
 builder.Services.AddScoped<RecentDateLtpSnapshotsDataRepo>();
+builder.Services.AddScoped<ZerodhaMarginCalculatorApiService>();
 
 builder.Services.AddScoped<ActiveClassicalCalendarRepo>();
 builder.Services.AddScoped<ExecuteClassicalCalendarRepo>();

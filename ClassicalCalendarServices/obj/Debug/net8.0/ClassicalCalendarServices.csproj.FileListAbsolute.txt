@@ -22,3 +22,5 @@ C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\Classic
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\obj\Debug\net8.0\refint\ClassicalCalendarServices.dll
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\obj\Debug\net8.0\ClassicalCalendarServices.pdb
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\obj\Debug\net8.0\ref\ClassicalCalendarServices.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\bin\Debug\net8.0\ApiDTO.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendarServices\bin\Debug\net8.0\ApiDTO.pdb

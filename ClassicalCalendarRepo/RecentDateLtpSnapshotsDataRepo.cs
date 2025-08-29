@@ -20,7 +20,7 @@ public class RecentDateLtpSnapshotsDataRepo
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-    public async Task<Responses<List<LtpSnapshotDto>>> GetRecentDateLtpSnapshotsData()
+    public async Task<Responses<List<LtpSnapshotDTO>>> GetRecentDateLtpSnapshotsData()
     {
         var ltpSnapshotsDate = await _classicalCalendarContext.LtpSnapshots
             .OrderByDescending(c => c.SnapshotDate)
@@ -28,7 +28,7 @@ public class RecentDateLtpSnapshotsDataRepo
 
         if (ltpSnapshotsDate == null)
         {
-            return Responses<List<LtpSnapshotDto>>.Error(HttpStatusCode.NotFound, "Ltp snapshot not found");
+            return Responses<List<LtpSnapshotDTO>>.Error(HttpStatusCode.NotFound, "Ltp snapshot not found");
         }
 
         var ltpSnapshots = await _classicalCalendarContext.LtpSnapshots
@@ -37,8 +37,8 @@ public class RecentDateLtpSnapshotsDataRepo
 
         if (ltpSnapshots is not null && ltpSnapshots.Any())
         {
-            return Responses<List<LtpSnapshotDto>>
-                .Success(ltpSnapshots.Select(s => new LtpSnapshotDto
+            return Responses<List<LtpSnapshotDTO>>
+                .Success(ltpSnapshots.Select(s => new LtpSnapshotDTO
                 {
                     Id = s.Id,
                     MonthlyCalendarId = s.MonthlyCalendarId,
@@ -51,6 +51,6 @@ public class RecentDateLtpSnapshotsDataRepo
                 }).ToList());
         }
 
-        return Responses<List<LtpSnapshotDto>>.Error(HttpStatusCode.NotFound, "Ltp snapshot not found");
+        return Responses<List<LtpSnapshotDTO>>.Error(HttpStatusCode.NotFound, "Ltp snapshot not found");
     }
 }

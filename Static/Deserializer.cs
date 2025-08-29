@@ -5,7 +5,7 @@ using System.Text.Json;
 
 public static class Deserializer
 {
-    public static async Task<Responses<DeserializerDto<T>>> DeserializationResponse<T>(HttpResponseMessage responseMessage)
+    public static async Task<Responses<DeserializerDTO<T>>> DeserializationResponse<T>(HttpResponseMessage responseMessage)
     {
         await using Stream responseStream = await GetDecompressedStream(responseMessage);
 
@@ -20,7 +20,7 @@ public static class Deserializer
         if (deserialized == null)
             throw new JsonException("Deserialization returned null.");
 
-        return Responses<DeserializerDto<T>>.Success(new DeserializerDto<T>
+        return Responses<DeserializerDTO<T>>.Success(new DeserializerDTO<T>
         {
             Response = deserialized
         });

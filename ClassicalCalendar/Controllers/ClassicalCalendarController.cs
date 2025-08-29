@@ -1,4 +1,5 @@
-﻿using ClassicalCalendarServices;
+﻿using ApiDTO;
+using ClassicalCalendarServices;
 using DTO;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +19,8 @@ public class ClassicalCalendarController : ControllerBase
         _activeCalendarService = activeCalendarService ?? throw new ArgumentNullException(nameof(activeCalendarService));
     }
 
-    [HttpGet(Name = "ActiveCalendar")]
-    public async Task<IActionResult> ActiveCalendar() =>
-        Ok(await _activeCalendarService.GetActiveCalendar());
+    [HttpGet(Name = "Calendar")]
+    public async Task<IActionResult> GetCalendar(MonthCalendarApiDTO CalendarMonthDTO) =>
+        Ok(await _activeCalendarService.GetCalendarByMonth(CalendarMonthDTO));
+
 }

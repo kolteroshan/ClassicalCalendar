@@ -7,7 +7,7 @@ namespace NseApiStaticModel;
 
 public static class Deserializer
 {
-    public static async Task<NseApiResponses<DeserializerDto<T>>> DeserializationResponse<T>(HttpResponseMessage responseMessage)
+    public static async Task<NseApiResponses<DeserializerDTO<T>>> DeserializationResponse<T>(HttpResponseMessage responseMessage)
     {
         await using Stream responseStream = await GetDecompressedStream(responseMessage);
 
@@ -22,7 +22,7 @@ public static class Deserializer
         if (deserialized == null)
             throw new JsonException("Deserialization returned null.");
 
-        return NseApiResponses<DeserializerDto<T>>.Success(new DeserializerDto<T>
+        return NseApiResponses<DeserializerDTO<T>>.Success(new DeserializerDTO<T>
         {
             Response = deserialized
         });

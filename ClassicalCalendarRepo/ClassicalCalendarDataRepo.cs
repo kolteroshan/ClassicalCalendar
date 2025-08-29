@@ -22,17 +22,17 @@ public class ClassicalCalendarDataRepo
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-    public async Task<Responses<ActiveCalendarWithSnapshotsDTO>> GetActiveClassicalCalendarData()
+    public async Task<Responses<CalendarWithSnapshotsDTO>> GetActiveClassicalCalendarData(MonthCalendarDTO monthCalendarDTO)
     {
         var calendarDatas = await _classicalCalendarContext.MonthlyCalendars
-            .SingleOrDefaultAsync(a => a.ClassicalCalendarStatus == ClassicalCalendarStatus.Active);
+            .SingleOrDefaultAsync(a => a.SellOrderExpiryDate.Month == monthCalendarDTO.Month && a.SellOrderExpiryDate.Year == monthCalendarDTO.Year);
 
         if (calendarDatas is null)
         {
-            return Responses<ActiveCalendarWithSnapshotsDTO>.Error(HttpStatusCode.NotFound, "No any active trade");
+            return Responses<CalendarWithSnapshotsDTO>.Error(HttpStatusCode.NotFound, "Calendar Not Found");
         }
 
-        return Responses<ActiveCalendarWithSnapshotsDTO>.Success(new ActiveCalendarWithSnapshotsDTO
+        return Responses<CalendarWithSnapshotsDTO>.Success(new CalendarWithSnapshotsDTO
         {
             Id = calendarDatas.Id,
             ExecutionDate = calendarDatas.ExecutionDate,
@@ -44,7 +44,7 @@ public class ClassicalCalendarDataRepo
             PutBuyLTP = calendarDatas.PutBuyLTP,
             CallSellLTP = calendarDatas.CallSellLTP,
             PutSellLTP = calendarDatas.PutSellLTP,
-            LtpHistory = calendarDatas.LtpHistory.Select(h => new LtpSnapshotDto
+            LtpHistory = calendarDatas.LtpHistory.Select(h => new LtpSnapshotDTO
             {
                 Id = h.Id,
                 SnapshotDate = h.SnapshotDate,

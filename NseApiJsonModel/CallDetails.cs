@@ -27,7 +27,7 @@ public class CallDetails
     public double TotalTradedVolume { get; set; }
 
     [JsonPropertyName("lastPrice")]
-    public double LastPrice { get; set; }
+    public decimal LastPrice { get; set; }
 
     [JsonPropertyName("bidprice")]
     public double Bidprice { get; set; }

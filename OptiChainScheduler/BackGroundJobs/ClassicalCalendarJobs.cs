@@ -45,7 +45,7 @@ public class ClassicalCalendarJobs
 
         var allTimeFrame = GetAllTimeFrames(ceSellData.Data, peSellData.Data, ceBuyData.Data, peBuyData.Data);
 
-        var todayLtpSnapshots = new List<LtpSnapshotDto>();
+        var todayLtpSnapshots = new List<LtpSnapshotDTO>();
 
         if (DateOnly.FromDateTime(DateTime.Today) == activeStrike.Data!.ExecutionDate)
         {
@@ -84,7 +84,7 @@ public class ClassicalCalendarJobs
             .Order()
             .ToList();
 
-    private async Task<List<LtpSnapshotDto>> RemainingDaysOfExecution(
+    private async Task<List<LtpSnapshotDTO>> RemainingDaysOfExecution(
         NseStrikeSnapshotDTO? ceSellData,
         NseStrikeSnapshotDTO? peSellData,
         NseStrikeSnapshotDTO? ceBuyData,
@@ -97,11 +97,11 @@ public class ClassicalCalendarJobs
 
         var lastLtpSnapshot = yesterdaySnapshots.Data!.OrderByDescending(c => c.SnapshotTime).First();
 
-        var todayLtpSnapshots = new List<LtpSnapshotDto>();
+        var todayLtpSnapshots = new List<LtpSnapshotDTO>();
 
         foreach (var snapshot in timeOnlies)
         {
-            var currentTime = new LtpSnapshotDto();
+            var currentTime = new LtpSnapshotDTO();
 
             currentTime.Id = Guid.NewGuid();
             currentTime.MonthlyCalendarId = activeClassicalCalendarDTO.Id;
@@ -187,7 +187,7 @@ public class ClassicalCalendarJobs
         return todayLtpSnapshots;
     }
 
-    private List<LtpSnapshotDto> FirstDayOfExecution(
+    private List<LtpSnapshotDTO> FirstDayOfExecution(
         NseStrikeSnapshotDTO? ceSellData,
         NseStrikeSnapshotDTO? peSellData,
         NseStrikeSnapshotDTO? ceBuyData,
@@ -195,9 +195,9 @@ public class ClassicalCalendarJobs
         ActiveClassicalCalendarDTO activeClassicalCalendarDTO,
         List<TimeOnly> timeOnlies)
     {
-        var todayLtpSnapshots = new List<LtpSnapshotDto>();
+        var todayLtpSnapshots = new List<LtpSnapshotDTO>();
 
-        var firstSnapshot = new LtpSnapshotDto
+        var firstSnapshot = new LtpSnapshotDTO
         {
             Id = Guid.NewGuid(),
             MonthlyCalendarId = activeClassicalCalendarDTO.Id,
@@ -219,7 +219,7 @@ public class ClassicalCalendarJobs
 
         foreach (var snapshot in timeOnlies)
         {
-            var currentTime = new LtpSnapshotDto();
+            var currentTime = new LtpSnapshotDTO();
 
             currentTime.Id = Guid.NewGuid();
             currentTime.MonthlyCalendarId = activeClassicalCalendarDTO.Id;

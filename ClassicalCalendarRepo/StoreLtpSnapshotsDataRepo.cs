@@ -20,7 +20,7 @@ public class StoreLtpSnapshotsDataRepo
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-    public async Task<Responses<Empty>> AddLtpSnapshotsDate(List<LtpSnapshotDto> snapshots)
+    public async Task<Responses<Empty>> AddLtpSnapshotsDate(List<LtpSnapshotDTO> snapshots)
     {
         var newSnapshots = snapshots.Select(s => new LtpSnapshot
         {

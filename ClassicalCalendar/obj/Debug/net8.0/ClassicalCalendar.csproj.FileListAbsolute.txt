@@ -58,3 +58,5 @@ C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\Classic
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendar\obj\Debug\net8.0\ClassicalCalendar.pdb
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendar\obj\Debug\net8.0\ClassicalCalendar.genruntimeconfig.cache
 C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendar\obj\Debug\net8.0\ref\ClassicalCalendar.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendar\bin\Debug\net8.0\ApiDTO.dll
+C:\Users\htadmin\OneDrive\Desktop\OptionTradingBackEnd\ClassicalCalendar\ClassicalCalendar\ClassicalCalendar\bin\Debug\net8.0\ApiDTO.pdb

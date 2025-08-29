@@ -1,6 +1,6 @@
 ﻿namespace DTO;
 
-public class DeserializerDto<T>
+public class DeserializerDTO<T>
 {
-    public T Response { get; set; }
+    public T? Response { get; set; }
 }

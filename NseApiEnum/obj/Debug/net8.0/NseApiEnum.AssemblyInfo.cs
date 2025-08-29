@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NseApiEnum")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cae5b46e8274837bcc3f0d9f7e7dcbb0aa570c50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+012d5a9678eed5ff751aab75b91423d36f2a1948")]
 [assembly: System.Reflection.AssemblyProductAttribute("NseApiEnum")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NseApiEnum")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
