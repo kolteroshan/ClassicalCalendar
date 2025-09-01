@@ -37,6 +37,18 @@ public class MonthlyCalendar
     [Column(TypeName = "decimal(18,2)")]
     public decimal PutBuyLTP { get; set; }
 
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal TotalUsedMoney { get; set; }
+
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal UsedMoneyForSell { get; set; }
+
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal UsedMoneyForBuy { get; set; }
+
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal HedgeMoney { get; set; }
+
     [Required]
     [Column(TypeName = "nvarchar(50)")]
     public ClassicalCalendarStatus ClassicalCalendarStatus { get; set; }

@@ -36,7 +36,11 @@ public class ExecuteClassicalCalendarRepo
                 Strike = newMonthlyCalendarDTO.Strike,
                 ClassicalCalendarStatus = newMonthlyCalendarDTO.ClassicalCalendarStatus,
                 ExecutionDate = newMonthlyCalendarDTO.ExecutionDate,
-                ExecutionTime = newMonthlyCalendarDTO.ExecutionTime
+                ExecutionTime = newMonthlyCalendarDTO.ExecutionTime,
+                TotalUsedMoney = newMonthlyCalendarDTO.TotalUsedMoney,
+                UsedMoneyForBuy = newMonthlyCalendarDTO.UsedMoneyForBuy,
+                UsedMoneyForSell = newMonthlyCalendarDTO.UsedMoneyForSell,
+                HedgeMoney = newMonthlyCalendarDTO.HedgeMoney
             });
 
         _ = await _classicalCalendarContext.SaveChangesAsync();

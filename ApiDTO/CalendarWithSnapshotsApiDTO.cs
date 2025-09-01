@@ -24,8 +24,8 @@ public class CalendarWithSnapshotsApiDTO
     public decimal HedgeMoney { get; set; }
     public decimal BreakEvenAbove { get; set; }
     public decimal BreakEvenBelow { get; set; }
-    public int SafetyBreakEvenAbove { get; set; }
-    public int SafetyBreakEvenBelow { get; set; }
+    public decimal SafetyBreakEvenAbove { get; set; }
+    public decimal SafetyBreakEvenBelow { get; set; }
     public int DaysToLeftExpiry { get; set; }
     public int DaysToExpiry { get; set; }
     public double MaxProfit { get; set; }

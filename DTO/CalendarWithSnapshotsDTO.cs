@@ -18,5 +18,9 @@ public class CalendarWithSnapshotsDTO
     public decimal PutSellLTP { get; set; }
     public decimal CallBuyLTP { get; set; }
     public decimal PutBuyLTP { get; set; }
+    public decimal TotalUsedMoney { get; set; }
+    public decimal UsedMoneyForSell { get; set; }
+    public decimal UsedMoneyForBuy { get; set; }
+    public decimal HedgeMoney { get; set; }
     public virtual ICollection<LtpSnapshotDTO> LtpHistory { get; set; } = new List<LtpSnapshotDTO>();
 }

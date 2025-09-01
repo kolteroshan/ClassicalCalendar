@@ -9,6 +9,8 @@
   <ItemGroup>
     <ProjectReference Include="..\ApiDTO\ApiDTO.csproj" />
     <ProjectReference Include="..\ClassicalCalendarRepo\ClassicalCalendarRepo.csproj" />
+    <ProjectReference Include="..\NseApi\NseApi.csproj" />
+    <ProjectReference Include="..\Records\Records.csproj" />
   </ItemGroup>
 
 </Project>

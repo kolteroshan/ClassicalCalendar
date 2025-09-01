@@ -12,7 +12,7 @@ public class Records
     public List<double> StrikePrices { get; set; }
 
     [JsonPropertyName("underlyingValue")]
-    public double UnderlyingValue { get; set; }
+    public decimal UnderlyingValue { get; set; }
 
     [JsonPropertyName("timestamp")]
     public string _dateAndTimeStamp { get; set; }

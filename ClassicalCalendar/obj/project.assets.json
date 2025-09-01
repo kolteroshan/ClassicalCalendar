@@ -409,7 +409,9 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "ApiDTO": "1.0.0",
-          "ClassicalCalendarRepo": "1.0.0"
+          "ClassicalCalendarRepo": "1.0.0",
+          "NseApi": "1.0.0",
+          "Records": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ClassicalCalendarServices.dll": {}
@@ -454,6 +456,92 @@
         },
         "runtime": {
           "bin/placeholder/Enum.dll": {}
+        }
+      },
+      "NseApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ClassicalCalendarGenericModel": "1.0.0",
+          "NseApiDTO": "1.0.0",
+          "NseApiGenericModel": "1.0.0",
+          "NseApiJsonModel": "1.0.0",
+          "NseApiStaticModel": "1.0.0",
+          "Static": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NseApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NseApi.dll": {}
+        }
+      },
+      "NseApiDTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NseApiDTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NseApiDTO.dll": {}
+        }
+      },
+      "NseApiGenericModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NseApiGenericModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NseApiGenericModel.dll": {}
+        }
+      },
+      "NseApiJsonModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NseApiJsonModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NseApiJsonModel.dll": {}
+        }
+      },
+      "NseApiStaticModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DTO": "1.0.0",
+          "NseApiGenericModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NseApiStaticModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NseApiStaticModel.dll": {}
+        }
+      },
+      "Records/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Records.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Records.dll": {}
+        }
+      },
+      "Static/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ClassicalCalendarGenericModel": "1.0.0",
+          "DTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Static.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Static.dll": {}
         }
       }
     }
@@ -1259,6 +1347,41 @@
       "type": "project",
       "path": "../Enum/Enum.csproj",
       "msbuildProject": "../Enum/Enum.csproj"
+    },
+    "NseApi/1.0.0": {
+      "type": "project",
+      "path": "../NseApi/NseApi.csproj",
+      "msbuildProject": "../NseApi/NseApi.csproj"
+    },
+    "NseApiDTO/1.0.0": {
+      "type": "project",
+      "path": "../NseApiDTO/NseApiDTO.csproj",
+      "msbuildProject": "../NseApiDTO/NseApiDTO.csproj"
+    },
+    "NseApiGenericModel/1.0.0": {
+      "type": "project",
+      "path": "../NseApiGenericModel/NseApiGenericModel.csproj",
+      "msbuildProject": "../NseApiGenericModel/NseApiGenericModel.csproj"
+    },
+    "NseApiJsonModel/1.0.0": {
+      "type": "project",
+      "path": "../NseApiJsonModel/NseApiJsonModel.csproj",
+      "msbuildProject": "../NseApiJsonModel/NseApiJsonModel.csproj"
+    },
+    "NseApiStaticModel/1.0.0": {
+      "type": "project",
+      "path": "../NseApiStaticModel/NseApiStaticModel.csproj",
+      "msbuildProject": "../NseApiStaticModel/NseApiStaticModel.csproj"
+    },
+    "Records/1.0.0": {
+      "type": "project",
+      "path": "../Records/Records.csproj",
+      "msbuildProject": "../Records/Records.csproj"
+    },
+    "Static/1.0.0": {
+      "type": "project",
+      "path": "../Static/Static.csproj",
+      "msbuildProject": "../Static/Static.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -44,6 +44,10 @@ public class ClassicalCalendarDataRepo
             PutBuyLTP = calendarDatas.PutBuyLTP,
             CallSellLTP = calendarDatas.CallSellLTP,
             PutSellLTP = calendarDatas.PutSellLTP,
+            TotalUsedMoney = calendarDatas.TotalUsedMoney,
+            UsedMoneyForSell = calendarDatas.UsedMoneyForSell,
+            UsedMoneyForBuy = calendarDatas.UsedMoneyForBuy,
+            HedgeMoney = calendarDatas.HedgeMoney,
             LtpHistory = calendarDatas.LtpHistory.Select(h => new LtpSnapshotDTO
             {
                 Id = h.Id,

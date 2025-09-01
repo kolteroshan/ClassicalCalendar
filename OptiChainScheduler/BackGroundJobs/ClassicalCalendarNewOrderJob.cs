@@ -3,9 +3,8 @@ using DTO;
 using Enum;
 using NseApi;
 using NseApiStaticModel;
-using System.Diagnostics;
-using System;
 using System.Net;
+using Records;
 
 namespace OptiChainScheduler.BackGroundJobs;
 
@@ -79,6 +78,13 @@ public class ClassicalCalendarNewOrderJob
 
         var buyStrike = nextMonthAfterNextOption.Strikes.Where(s => s.Strike == strike).Single();
 
+        var margin = await CalculateMargin(
+            nextMonthOption.ExpiryDate, 
+            (int)strike, 
+            75, 
+            buyStrike.CallDTO.LastPrice, 
+            buyStrike.PutData.LastPrice);
+
         return new NewMonthlyCalendarDTO
         {
             Id = Guid.NewGuid(),
@@ -91,7 +97,35 @@ public class ClassicalCalendarNewOrderJob
             Strike = (int)strike,
             ClassicalCalendarStatus = ClassicalCalendarStatus.Active,
             ExecutionDate = DateOnly.FromDateTime(now),
-            ExecutionTime = TimeOnly.FromDateTime(now)
+            ExecutionTime = TimeOnly.FromDateTime(now),
+            TotalUsedMoney = margin.TotalUsedMoney,
+            UsedMoneyForSell = margin.UsedMoneyForSell,
+            UsedMoneyForBuy = margin.UsedMoneyForBuy,
+            HedgeMoney = margin.HedgeMoney
         };
+    }
+
+    public async Task<MarginRecord> CalculateMargin(
+        DateOnly sellExpiry,
+        int strike, 
+        int quentity,
+        decimal ceBuyLtp,
+        decimal peBuyLtp)
+    {
+        var ceSellMargin = await _zerodhaMarginCalculatorApiService.GetMargin("NFO", "OPT", "NIFTY", sellExpiry, "CE", strike, quentity, "sell");
+        var peSellMargin = await _zerodhaMarginCalculatorApiService.GetMargin("NFO", "OPT", "NIFTY", sellExpiry, "PE", strike, quentity, "sell");
+
+        var ceBuyMargin = ceBuyLtp * quentity;
+        var peBuyMargin = peBuyLtp * quentity;
+
+        var totalSell = ceSellMargin.Data.Total + peSellMargin.Data.Total;
+        var totalBuy = ceBuyMargin + peBuyMargin;
+
+        var reducedSellMargin = totalSell * 0.25m; // keep only 25% exposure
+        var netMargin = reducedSellMargin + totalBuy;
+
+        var hedge = totalSell - netMargin;
+
+        return new MarginRecord(netMargin, totalSell, totalBuy, hedge);
     }
 }
